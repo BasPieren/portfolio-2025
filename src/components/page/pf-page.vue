@@ -12,5 +12,9 @@
 </template>
 
 <script setup lang="ts">
-defineProps({ blok: Object });
+const props = defineProps({ blok: Object });
 </script>
+
+<style scoped lang="scss">
+@use 'pf-page';
+</style>
