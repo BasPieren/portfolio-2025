@@ -7,7 +7,7 @@
             {{ blok.heading }}
         </h1>
 
-        <h2 class="h2--highlight text__subheading">
+        <h2 class="text__subheading">
             {{ blok.subheading }}
         </h2>
 

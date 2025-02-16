@@ -1,40 +1,66 @@
 h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+p,
+.p {
+    &--primary {
+        color: var(--primary);
+    }
+
+    &--secondary {
+        color: var(--secondary);
+    }
+}
+
+h1,
 .h1 {
     font-size: 5em;
     line-height: 1;
     font-weight: 800;
     text-transform: uppercase;
+
+
 }
 
 h2,
 .h2 {
-    font-size: 3em;
+    font-size: 4em;
     line-height: 1;
     font-weight: 700;
     text-transform: uppercase;
-
-    &--highlight {
-        color: var(--secondary);
-    }
 }
 
 h3,
 .h3 {
-    font-size: 2em;
+    font-size: 3em;
     line-height: 1;
-    font-weight: 600;
+}
 
-    &--highlight {
-        color: var(--primary);
-    }
+h4,
+.h4 {
+    font-size: 2em;
+    line-height: 1.2;
 }
 
 p,
 .p {
     font-size: 1.5em;
     line-height: 1.2;
-    color: var(--paragraph);
+    color: var(--accent);
     font-weight: 300;
+
+    &--bold {
+        font-weight: 500;
+    }
 
     &--small {
         font-size: 1.2em;

@@ -1,0 +1,23 @@
+.timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 1rem;
+
+    &:not(:last-child) {
+        padding-bottom: 2rem;
+        border-bottom: 1px solid var(--accent);
+    }
+
+    svg {
+        height: 1.2rem;
+        color: var(--secondary);
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: .25rem;
+    }
+}

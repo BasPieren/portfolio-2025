@@ -10,9 +10,9 @@
         >
 
         <div class="hero__content">
-            <h3 class="hero__heading">
+            <h4 class="hero__heading">
                 {{ blok.heading }}
-            </h3>
+            </h4>
 
             <p class="hero__paragraph p--small">
                 {{ blok.paragraph }}

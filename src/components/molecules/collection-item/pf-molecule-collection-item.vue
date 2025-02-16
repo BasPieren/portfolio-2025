@@ -13,11 +13,11 @@
             v-if="blok.value || blok.description"
             class="collection-item__content"
         >
-            <h3 class="collection-item__value h3--highlight">
+            <h4 class="collection-item__value h3--primary">
                 {{ blok.value }}
-            </h3>
+            </h4>
 
-            <p class="collection-item__description p--small">
+            <p class="collection-item__description p--small p--bold">
                 {{ blok.description }}
             </p>
         </div>
