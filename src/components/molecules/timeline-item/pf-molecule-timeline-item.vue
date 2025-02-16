@@ -3,15 +3,17 @@
         v-editable="blok"
         class="timeline-item"
     >
-        <font-awesome-icon
-            v-if="blok.work"
-            :icon="faBriefcase"
-        />
+        <div class="timeline-item__icon">
+            <font-awesome-icon
+                v-if="blok.work"
+                :icon="faBriefcase"
+            />
 
-        <font-awesome-icon
-            v-if="blok.school"
-            :icon="faGraduationCap"
-        />
+            <font-awesome-icon
+                v-if="blok.school"
+                :icon="faGraduationCap"
+            />
+        </div>
 
         <div class="timeline-item__content">
             <h4 class="timeline-item__heading">
