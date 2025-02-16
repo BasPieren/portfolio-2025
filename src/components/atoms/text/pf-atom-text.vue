@@ -1,15 +1,19 @@
 <template>
     <section
         v-editable="blok"
-        class="hero"
+        class="text"
     >
-        <div
-            class="hero__inner"
-        >
+        <h1 class="text__heading">
             {{ blok.heading }}
+        </h1>
 
+        <h2 class="h2--highlight text__subheading">
+            {{ blok.subheading }}
+        </h2>
+
+        <p class="text__paragraph">
             {{ blok.paragraph }}
-        </div>
+        </p>
     </section>
 </template>
 
@@ -18,5 +22,5 @@ defineProps({ blok: Object });
 </script>
 
 <style scoped lang="scss">
-@use 'pf-hero';
+@use 'pf-atom-text';
 </style>

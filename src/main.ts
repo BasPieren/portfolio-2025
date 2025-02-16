@@ -6,7 +6,11 @@ import { StoryblokVue, apiPlugin } from '@storyblok/vue';
 
 import App from './App.vue';
 import pfPage from './components/page/pf-page.vue';
-import pfHero from './components/hero/pf-hero.vue';
+import pfLayout from './components/layout/pf-layout.vue';
+import pfAtomText from './components/atoms/text/pf-atom-text.vue';
+import pfOrganismCollection from './components/organisms/collection/pf-organism-collection.vue';
+import pfMoleculeCollectionItem from './components/molecules/collection-item/pf-molecule-collection-item.vue';
+import pfMoleculeHero from './components/molecules/hero/pf-molecule-hero.vue';
 import router from './router';
 
 const app = createApp(App);
@@ -21,5 +25,9 @@ app.use(router);
 
 app.mount('#app');
 
-app.component('Page', pfPage);
-app.component('Hero', pfHero);
+app.component('page', pfPage);
+app.component('layout', pfLayout);
+app.component('text', pfAtomText);
+app.component('collection', pfOrganismCollection);
+app.component('collection_item', pfMoleculeCollectionItem);
+app.component('hero', pfMoleculeHero);

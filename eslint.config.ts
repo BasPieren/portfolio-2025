@@ -31,7 +31,7 @@ export default defineConfigWithVueTs(
             'vue/html-indent': [ 'error', 4 ],
             'vue/attribute-hyphenation': [ 'error', 'always' ],
             'vue/max-attributes-per-line': [ 'error', { 'singleline': 1 } ],
-            'vue/first-attribute-linebreak': [ 'error', { 'singleline': 'below' } ],
+            'vue/first-attribute-linebreak': [ 'error', { 'multiline': 'below' } ],
             'vue/component-tags-order': [ 'error', { order: [ 'template', 'script', 'style' ] } ],
             'vue/html-closing-bracket-newline': [ 'error', { 'singleline': 'never', 'multiline': 'always' } ],
             'vue/script-indent': [ 'error', 4 ],

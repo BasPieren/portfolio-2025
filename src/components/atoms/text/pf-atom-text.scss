@@ -1,0 +1,9 @@
+.text {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+
+    &__heading {
+        position: relative;
+    }
+}

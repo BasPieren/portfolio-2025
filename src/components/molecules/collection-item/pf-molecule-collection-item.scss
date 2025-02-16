@@ -1,0 +1,28 @@
+.collection-item {
+    display: flex;
+    gap: .75rem;
+    max-width: calc(100% / 3 - 1rem);
+    align-items: center;
+    background: #ffffff;
+    border: 4px solid var(--secondary);
+    border-radius: 1rem;
+    padding: 1rem 1.3rem;
+    transition: scale 0.3s;
+
+    &:hover {
+        scale: 1.05;
+        cursor: default;
+    }
+
+    &__media {
+        display: block;
+        height: 40px;
+        aspect-ratio: 1 / 1;
+        object-fit: contain;
+    }
+
+    &__description {
+        text-wrap: anywhere;
+        font-weight: 500;
+    }
+}

@@ -1,14 +1,14 @@
 <template>
-    <div
+    <article
         v-editable="blok"
-        class="page"
+        class="collection"
     >
         <StoryblokComponent
-            v-for="inblok in blok.body"
+            v-for="inblok in blok.collection_items"
             :blok="inblok"
             :key="inblok._uid"
         />
-    </div>
+    </article>
 </template>
 
 <script setup lang="ts">
@@ -16,5 +16,5 @@ defineProps({ blok: Object });
 </script>
 
 <style scoped lang="scss">
-@use 'pf-page';
+@use 'pf-organism-collection';
 </style>
