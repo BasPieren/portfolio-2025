@@ -4,7 +4,7 @@
         class="page"
     >
         <StoryblokComponent
-            v-for="inblok in blok.body"
+            v-for="inblok in blok?.body"
             :blok="inblok"
             :key="inblok._uid"
         />

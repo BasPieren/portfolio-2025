@@ -5,28 +5,28 @@
     >
         <div class="timeline-item__icon">
             <font-awesome-icon
-                v-if="blok.work"
+                v-if="blok?.work"
                 :icon="faBriefcase"
             />
 
             <font-awesome-icon
-                v-if="blok.school"
+                v-if="blok?.school"
                 :icon="faGraduationCap"
             />
         </div>
 
         <div class="timeline-item__content">
             <h4 class="timeline-item__heading">
-                {{ blok.heading }}
+                {{ blok?.heading }}
             </h4>
 
             <p class="timeline-item__paragraph p--bold">
-                {{ blok.paragraph }}
+                {{ blok?.paragraph }}
             </p>
         </div>
 
         <p class="timeline-item__date p--small">
-            {{ blok.date }}
+            {{ blok?.date }}
         </p>
     </div>
 </template>

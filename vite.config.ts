@@ -14,8 +14,5 @@ export default defineConfig({
             '@components': fileURLToPath(new URL('./src/components', import.meta.url)),
         },
     },
-    server: {
-        port: 3000,
-        https: true,
-    },
+    server: { port: 3000 },
 });

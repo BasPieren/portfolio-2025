@@ -4,26 +4,26 @@
         class="hero"
     >
         <img
-            v-if="blok.media"
+            v-if="blok?.media"
             class="hero__media"
-            :src="blok.media"
+            :src="blok?.media"
         >
 
         <div class="hero__content">
             <h4 class="hero__heading">
-                {{ blok.heading }}
+                {{ blok?.heading }}
             </h4>
 
             <p class="hero__paragraph p--small">
-                {{ blok.paragraph }}
+                {{ blok?.paragraph }}
             </p>
         </div>
 
         <div class="hero__socials">
             <a
-                v-if="blok.linkedin"
+                v-if="blok?.linkedin"
                 class="hero__button hero__button--linkedin"
-                :href="blok.linkedin.url"
+                :href="blok?.linkedin.url"
                 target="_blank"
             >
                 <span class="hero__button-label">

@@ -4,15 +4,15 @@
         class="text"
     >
         <h1 class="text__heading">
-            {{ blok.heading }}
+            {{ blok?.heading }}
         </h1>
 
         <h2 class="text__subheading">
-            {{ blok.subheading }}
+            {{ blok?.subheading }}
         </h2>
 
         <p class="text__paragraph">
-            {{ blok.paragraph }}
+            {{ blok?.paragraph }}
         </p>
     </section>
 </template>

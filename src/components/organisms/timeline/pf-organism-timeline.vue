@@ -4,7 +4,7 @@
         class="timeline"
     >
         <StoryblokComponent
-            v-for="inblok in blok.timeline_items"
+            v-for="inblok in blok?.timeline_items"
             :blok="inblok"
             :key="inblok._uid"
         />

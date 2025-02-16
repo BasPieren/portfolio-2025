@@ -6,7 +6,7 @@
         <div class="layout__inner">
             <div class="layout__column layout__column--left">
                 <StoryblokComponent
-                    v-for="inblok in blok.column_left"
+                    v-for="inblok in blok?.column_left"
                     :blok="inblok"
                     :key="inblok._uid"
                 />
@@ -14,7 +14,7 @@
 
             <div class="layout__column layout__column--right">
                 <StoryblokComponent
-                    v-for="inblok in blok.column_right"
+                    v-for="inblok in blok?.column_right"
                     :blok="inblok"
                     :key="inblok._uid"
                 />

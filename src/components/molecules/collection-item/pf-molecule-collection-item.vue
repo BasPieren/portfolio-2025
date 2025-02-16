@@ -4,21 +4,21 @@
         class="collection-item"
     >
         <img
-            v-if="blok.media"
+            v-if="blok?.media"
             class="collection-item__media"
-            :src="blok.media"
+            :src="blok?.media"
         />
 
         <div
-            v-if="blok.value || blok.description"
+            v-if="blok?.value || blok?.description"
             class="collection-item__content"
         >
             <h4 class="collection-item__value h3--primary">
-                {{ blok.value }}
+                {{ blok?.value }}
             </h4>
 
             <p class="collection-item__description p--small p--bold">
-                {{ blok.description }}
+                {{ blok?.description }}
             </p>
         </div>
     </div>

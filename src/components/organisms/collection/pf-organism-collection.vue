@@ -4,7 +4,7 @@
         class="collection"
     >
         <StoryblokComponent
-            v-for="inblok in blok.collection_items"
+            v-for="inblok in blok?.collection_items"
             :blok="inblok"
             :key="inblok._uid"
         />
