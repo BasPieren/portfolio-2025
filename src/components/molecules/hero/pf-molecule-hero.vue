@@ -18,10 +18,28 @@
                 {{ blok.paragraph }}
             </p>
         </div>
+
+        <div class="hero__socials">
+            <a
+                v-if="blok.linkedin"
+                class="hero__button hero__button--linkedin"
+                :href="blok.linkedin.url"
+                target="_blank"
+            >
+                <span class="hero__button-label">
+                    LinkedIn
+                </span>
+
+                <font-awesome-icon :icon="faLinkedin" />
+            </a>
+        </div>
     </section>
 </template>
 
 <script setup lang="ts">
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
 defineProps({ blok: Object });
 </script>
 

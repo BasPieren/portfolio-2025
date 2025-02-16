@@ -1,7 +1,11 @@
 .text {
     display: flex;
     flex-direction: column;
-    padding-top: 2rem;
+    gap: .25rem;
+
+    &:not(:first-child) {
+        padding-top: 1rem;
+    }
 
     &__heading {
         position: relative;
