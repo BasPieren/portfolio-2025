@@ -19,6 +19,7 @@ const app = createApp(App);
 
 app.use(StoryblokVue, {
     accessToken: import.meta.env.VITE_STORYBLOK_PREVIEW_TOKEN,
+    bridge: import.meta.env.NODE_ENV !== 'production',
     use: [ apiPlugin ],
 });
 
