@@ -1,14 +1,14 @@
 <template>
-    <article
+    <section
         v-editable="blok"
-        class="timeline"
+        class="component-list"
     >
         <StoryblokComponent
-            v-for="inblok in blok?.timeline_items"
+            v-for="inblok in blok?.componentList_items"
             :blok="inblok"
             :key="inblok._uid"
         />
-    </article>
+    </section>
 </template>
 
 <script setup lang="ts">
@@ -16,5 +16,5 @@ defineProps({ blok: Object });
 </script>
 
 <style scoped lang="scss">
-@use 'pf-organism-timeline';
+@use 'pf-organism-component-list';
 </style>
