@@ -1,13 +1,19 @@
+@use '../../../style/mixins.scss' as *;
+
 .collection-item {
     display: flex;
     gap: .75rem;
-    max-width: calc(100% / 3 - 1rem);
     align-items: center;
     background: var(--background-light);
     border: 2px solid var(--background-light);
     border-radius: .8rem;
     padding: 1rem 1.3rem;
     transition: all 0.3s;
+
+    @include desktop {
+        width: initial;
+        max-width: calc(100% / 3 - 1rem);
+    }
 
     &:hover {
         border-color: var(--secondary);

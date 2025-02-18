@@ -1,6 +1,13 @@
+@use '../../../style/mixins.scss' as *;
+
 .collection {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
+
+    @include desktop {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
 }
