@@ -18,10 +18,27 @@
 
             <p
                 v-if="blok?.paragraph"
-                class="card__paragraph p--small"
+                class="card__paragraph"
             >
                 {{ blok.paragraph }}
             </p>
+
+            <div
+                v-if="blok?.tags && blok.tags.length > 0"
+                class="card__tags"
+            >
+                <span
+                    v-for="tag in blok?.tags"
+                    :key="tag"
+                    :class="[
+                        'card__tag',
+                        `card__tag--${tag.toLowerCase()}`,
+                        'p--small',
+                    ]"
+                >
+                    {{ tag }}
+                </span>
+            </div>
         </div>
     </article>
 </template>

@@ -5,6 +5,13 @@
     background: var(--background-light);
     border: 2px solid var(--background-light);
     border-radius: 1rem;
+    transition: all .3s;
+    overflow: hidden;
+
+    &:hover {
+        border-color: var(--secondary);
+        cursor: default;
+    }
 
     &__header {
         position: relative;
@@ -23,7 +30,43 @@
     &__content {
         display: flex;
         flex-direction: column;
-        gap: .5rem;
+        gap: .75rem;
         padding: 0 2rem 2rem;
+    }
+
+    &__tags {
+        display: flex;
+        gap: .5rem;
+        padding-top: 1rem;
+    }
+
+    &__tag {
+        background-color: var(--secondary);
+        padding: .5rem 1rem;
+        border-radius: 1rem;
+
+        &--scss {
+            background-color: var(--sass);
+        }
+
+        &--vue {
+            background-color: var(--vue);
+        }
+
+        &--vite {
+            background-color: var(--vite);
+        }
+
+        &--vuex {
+            background-color: var(--vuex);
+        }
+
+        &--cypress {
+            background-color: var(--cypress);
+        }
+
+        &--react {
+            background-color: var(--react);
+        }
     }
 }
