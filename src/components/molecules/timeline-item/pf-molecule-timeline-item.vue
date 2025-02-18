@@ -20,7 +20,7 @@
                 {{ blok?.heading }}
             </h4>
 
-            <p class="timeline-item__paragraph p--semibold">
+            <p class="timeline-item__paragraph p--light p--semibold">
                 {{ blok?.paragraph }}
             </p>
         </div>

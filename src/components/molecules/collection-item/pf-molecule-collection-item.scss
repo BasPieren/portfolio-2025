@@ -7,10 +7,12 @@
     border: 2px solid var(--background-light);
     border-radius: .8rem;
     padding: 1rem 1.3rem;
-    transition: scale 0.3s;
+    transition: all 0.3s;
 
     &:hover {
+        border-color: var(--secondary);
         scale: 1.05;
+        box-shadow: 0px 0px 10px 0px var(--secondary);
         cursor: default;
     }
 
