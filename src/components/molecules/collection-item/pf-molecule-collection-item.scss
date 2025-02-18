@@ -7,11 +7,12 @@
     background: var(--background-light);
     border: 2px solid var(--background-light);
     border-radius: .8rem;
-    padding: 1rem 1.3rem;
+    padding: 1rem;
     transition: all 0.3s;
 
     @include desktop {
         width: initial;
+        padding: 1rem 1.3rem;
         max-width: calc(100% / 3 - 1rem);
     }
 
