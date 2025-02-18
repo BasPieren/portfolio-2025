@@ -1,5 +1,41 @@
+@use '../../../style/mixins.scss' as *;
+
 .column-section {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+
+    @include desktop {
+        animation: animateIn linear forwards, animateOut linear forwards;
+        animation-timeline: view();
+        animation-range: entry, exit 30%;
+    }
+
+    @media (prefers-reduced-motion) {
+        animation: none;
+    }
+}
+
+@keyframes animateIn {
+    0% {
+        opacity: 0;
+        scale: 0.95;
+    }
+
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes animateOut {
+    0% {
+        opacity: 1;
+        scale: 1;
+    }
+
+    100% {
+        opacity: 0;
+        scale: 0.95;
+    }
 }
