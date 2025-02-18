@@ -3,16 +3,25 @@
         v-editable="blok"
         class="text"
     >
-        <h1 class="text__heading">
-            {{ blok?.heading }}
+        <h1
+            v-if="blok?.heading"
+            class="text__heading"
+        >
+            {{ blok.heading }}
         </h1>
 
-        <h2 class="text__subheading">
-            {{ blok?.subheading }}
+        <h2
+            v-if="blok?.subheading"
+            class="text__subheading"
+        >
+            {{ blok.subheading }}
         </h2>
 
-        <p class="text__paragraph">
-            {{ blok?.paragraph }}
+        <p
+            v-if="blok?.paragraph"
+            class="text__paragraph"
+        >
+            {{ blok.paragraph }}
         </p>
     </section>
 </template>
