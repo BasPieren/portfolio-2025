@@ -36,6 +36,7 @@
 
     &__tags {
         display: flex;
+        flex-wrap: wrap;
         gap: .5rem;
         padding-top: 1rem;
     }
