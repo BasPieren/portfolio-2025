@@ -14,9 +14,11 @@
         border-bottom: 2px solid var(--background-light);
     }
 
-    &:hover {
-        &::before {
-            clip-path: inset(0 0 0 0);
+    @media (hover: hover) {
+        &:hover {
+            &::before {
+                clip-path: inset(0 0 0 0);
+            }
         }
     }
 

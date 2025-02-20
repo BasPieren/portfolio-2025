@@ -24,11 +24,13 @@
         }
     }
 
-    &:hover {
-        border-color: var(--secondary);
-        scale: 1.05;
-        box-shadow: 0 0 10px 0 var(--secondary);
-        cursor: default;
+    @media (hover: hover) {
+        &:hover {
+            border-color: var(--secondary);
+            scale: 1.05;
+            box-shadow: 0 0 10px 0 var(--secondary);
+            cursor: default;
+        }
     }
 
     &__media {
