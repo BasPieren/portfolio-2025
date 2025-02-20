@@ -16,6 +16,14 @@
         max-width: calc(100% / 3 - 1rem);
     }
 
+    &:has(.collection-item__media) {
+        @include mobile {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
     &:hover {
         border-color: var(--secondary);
         scale: 1.05;
