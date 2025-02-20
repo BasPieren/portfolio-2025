@@ -2,18 +2,18 @@
 
 .collection-item {
     display: flex;
-    gap: .75rem;
     align-items: center;
-    background: var(--background-light);
+    gap: .75rem;
+    padding: 1rem;
     border: 2px solid var(--background-light);
     border-radius: .8rem;
-    padding: 1rem;
-    transition: all 0.3s;
+    background: var(--background-light);
+    transition: all .3s;
 
     @include desktop {
         width: initial;
-        padding: 1rem 1.3rem;
         max-width: calc(100% / 3 - 1rem);
+        padding: 1rem 1.3rem;
     }
 
     &:has(.collection-item__media) {
@@ -27,7 +27,7 @@
     &:hover {
         border-color: var(--secondary);
         scale: 1.05;
-        box-shadow: 0px 0px 10px 0px var(--secondary);
+        box-shadow: 0 0 10px 0 var(--secondary);
         cursor: default;
     }
 
