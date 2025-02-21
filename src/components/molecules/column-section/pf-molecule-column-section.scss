@@ -6,9 +6,11 @@
     gap: 2rem;
 
     @include desktop {
-        animation: animate-in linear forwards, animate-out linear forwards;
-        animation-timeline: view();
-        animation-range: entry, exit 30%;
+        @supports (animation-timeline: view) {
+            animation: animate-in linear forwards, animate-out linear forwards;
+            animation-timeline: view();
+            animation-range: entry, exit 30%;
+        }
     }
 
     @media (prefers-reduced-motion) {
