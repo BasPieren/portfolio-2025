@@ -17,7 +17,8 @@
 
     &__media {
         width: 250px;
-        object-fit: contain;
+        height: 250px;
+        object-fit: cover;
         border-radius: 50%;
     }
 
