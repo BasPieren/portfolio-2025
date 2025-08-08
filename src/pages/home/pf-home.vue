@@ -25,7 +25,7 @@ onBeforeMount(async () => {
     if (!code) {
         redirectToAuthCodeFlow();
     } else {
-        const accessToken = await getSpotifyAccessToken();
+        const accessToken = await getSpotifyAccessToken(code);
         const spotifyProfile = await getSpotifyProfile(accessToken);
 
         console.log('Spotify Profile:', spotifyProfile);

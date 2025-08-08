@@ -1,6 +1,7 @@
-export const getSpotifyAccessToken = async (): Promise<string> => {
+export const getSpotifyAccessToken = async (code: string): Promise<string> => {
     const clientId = import.meta.env.VITE_SPOTIFY_CLIENT_ID;
     const clientSecret = import.meta.env.VITE_SPOTIFY_CLIENT_SECRET;
+    const verifier = localStorage.getItem('verifier');
 
     const response = await fetch('https://accounts.spotify.com/api/token', {
         method: 'POST',
@@ -8,7 +9,12 @@ export const getSpotifyAccessToken = async (): Promise<string> => {
             'Content-Type': 'application/x-www-form-urlencoded',
             'Authorization': `Basic ${btoa(`${clientId}:${clientSecret}`)}`,
         },
-        body: new URLSearchParams({ 'grant_type': 'client_credentials', json: 'true' }),
+        body: new URLSearchParams({
+            'grant_type': 'authorization_code',
+            'code': code,
+            'redirect_uri': 'https://baspieren.nl',
+            'code_verifier': verifier!,
+        }),
     });
 
     if (!response.ok) {
