@@ -10,7 +10,7 @@ export const getSpotifyAccessToken = async (code: string): Promise<string> => {
             'Authorization': `Basic ${btoa(`${clientId}:${clientSecret}`)}`,
         },
         body: new URLSearchParams({
-            'grant_type': 'authorization_code',
+            'grant_type': 'client_credentials',
             'code': code,
             'redirect_uri': 'https://baspieren.nl',
             'code_verifier': verifier!,

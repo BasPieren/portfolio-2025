@@ -19,17 +19,17 @@ import { getSpotifyProfile } from '@/utils/get-spotify-profile';
 const story = await useStoryblok('home', { version: 'draft' });
 
 onBeforeMount(async () => {
-    const params = new URLSearchParams(window.location.search);
-    const code = params.get('code');
+    // const params = new URLSearchParams(window.location.search);
+    // const code = params.get('code');
 
-    if (!code) {
-        redirectToAuthCodeFlow();
-    } else {
-        const accessToken = await getSpotifyAccessToken(code);
-        const spotifyProfile = await getSpotifyProfile(accessToken);
+    // if (!code) {
+    //     redirectToAuthCodeFlow();
+    // } else {
+    //     const accessToken = await getSpotifyAccessToken(code);
+    //     const spotifyProfile = await getSpotifyProfile(accessToken);
 
-        console.log('Spotify Profile:', spotifyProfile);
-    }
+    //     console.log('Spotify Profile:', spotifyProfile);
+    // }
 });
 </script>
 
