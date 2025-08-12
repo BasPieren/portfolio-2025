@@ -34,6 +34,7 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
 import { Platform } from '@/enums/platform';
+import { getSteamOwnedGames } from '@/utils/get-steam-owned-games';
 import { getStravaStats } from '@/utils/get-strava-stats';
 
 const props = defineProps({ blok: Object });
@@ -41,9 +42,17 @@ const props = defineProps({ blok: Object });
 const dynamicValue = ref<string | number | null>(null);
 
 onMounted(async () => {
-    if (props.blok?.platform === Platform.Strava) {
+    switch (props.blok?.platform) {
+    case Platform.Steam:
+        const steamGames = await getSteamOwnedGames();
+        dynamicValue.value = steamGames.response.game_count;
+        break;
+    case Platform.Strava:
         const stravaStats = await getStravaStats();
         dynamicValue.value = (stravaStats.ytd_ride_totals.distance / 1000).toFixed();
+        break;
+    default:
+        dynamicValue.value = null;
     }
 });
 
