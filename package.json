@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "nuxt dev",
-    "build": "run-p type-check \"build-only {@}\" --",
+    "build": "nuxt build",
     "preview": "nuxt preview",
     "build-only": "nuxt build",
     "type-check": "vue-tsc --build",
