@@ -25,8 +25,6 @@
 </template>
 
 <script setup lang="ts">
-import { Platform } from '@/enums/platform';
-
 defineProps({ blok: Object });
 </script>
 
