@@ -33,33 +33,6 @@
         }
     }
 
-    &--steam {
-        @media (hover: hover) {
-            &:hover {
-                border-color: var(--steam);
-                box-shadow: 0 0 10px 0 var(--steam);
-            }
-        }
-    }
-
-    &--spotify {
-        @media (hover: hover) {
-            &:hover {
-                border-color: var(--spotify);
-                box-shadow: 0 0 10px 0 var(--spotify);
-            }
-        }
-    }
-
-    &--strava {
-        @media (hover: hover) {
-            &:hover {
-                border-color: var(--strava);
-                box-shadow: 0 0 10px 0 var(--strava);
-            }
-        }
-    }
-
     &__media {
         display: block;
         height: 40px;
