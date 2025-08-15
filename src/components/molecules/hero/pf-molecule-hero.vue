@@ -3,11 +3,13 @@
         v-editable="blok"
         class="hero"
     >
-        <img
-            v-if="blok?.media"
-            class="hero__media"
-            :src="blok?.media"
-        >
+        <div class="hero__media-wrapper">
+            <img
+                v-if="blok?.media"
+                class="hero__media"
+                :src="blok?.media"
+            >
+        </div>
 
         <div class="hero__content">
             <h4 class="hero__heading">
