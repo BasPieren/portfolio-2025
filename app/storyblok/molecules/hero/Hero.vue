@@ -38,7 +38,7 @@
     </section>
 </template>
 
-<script setup lang="ts">
+<script setup >
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 

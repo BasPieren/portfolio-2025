@@ -9,8 +9,8 @@ export default {
         '@stylistic/stylelint-plugin',
     ],
     rules: {
-        // stylelint built-in rules
-        // @see: https://stylelint.io/user-guide/rules
+    // stylelint built-in rules
+    // @see: https://stylelint.io/user-guide/rules
         'at-rule-empty-line-before': [ 'always', {
             'except': [
                 'first-nested',
@@ -22,7 +22,7 @@ export default {
             'ignoreAtRules': [ 'include', 'layer', 'if', 'else' ],
         } ],
         'color-named': 'never',
-        'declaration-empty-line-before':[ 'always', {
+        'declaration-empty-line-before': [ 'always', {
             'except': [
                 'after-comment',
                 'after-declaration',

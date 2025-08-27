@@ -11,7 +11,7 @@
     </article>
 </template>
 
-<script setup lang="ts">
+<script setup >
 defineProps({ blok: Object });
 </script>
 

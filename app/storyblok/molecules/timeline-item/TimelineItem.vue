@@ -31,7 +31,7 @@
     </div>
 </template>
 
-<script setup lang="ts">
+<script setup >
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { faBriefcase, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 
