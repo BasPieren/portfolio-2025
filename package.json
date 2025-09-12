@@ -30,6 +30,7 @@
     "stylelint": "^16.23.1",
     "stylelint-config-standard-scss": "^14.0.0",
     "stylelint-declaration-strict-value": "^1.10.7",
-    "stylelint-order": "^6.0.4"
+    "stylelint-order": "^6.0.4",
+    "vite-plugin-mkcert": "^1.17.8"
   }
 }

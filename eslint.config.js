@@ -15,7 +15,7 @@ export default defineConfig(
             'comma-dangle': [ 'error', 'always-multiline' ],
             'vue/html-indent': [ 'error', 4 ],
             'vue/attribute-hyphenation': [ 'error', 'always' ],
-            'vue/max-attributes-per-line': [ 'error', { 'singleline': 1 } ],
+            'vue/max-attributes-per-line': [ 'error', { 'singleline': 4 } ],
             'vue/first-attribute-linebreak': [ 'error', { 'multiline': 'below' } ],
             'vue/block-order': [ 'error', { order: [ 'template', 'script', 'style' ] } ],
             'vue/html-closing-bracket-newline': [ 'error', { 'singleline': 'never', 'multiline': 'always' } ],

@@ -1,7 +1,8 @@
 import { defineNuxtConfig } from 'nuxt/config';
+import mkcert from "vite-plugin-mkcert";
 
 export default defineNuxtConfig({
-    compatibilityDate: '2025-07-15',
+    devtools: { enabled: true },
     modules: [
         [
             '@nuxtjs/eslint-module',
@@ -18,4 +19,7 @@ export default defineNuxtConfig({
             },
         ],
     ],
+    devServer: {
+        https: true,
+    },
 });
