@@ -9,7 +9,7 @@
     }
 
     &.u-light {
-        color: #ffffff;
+        color: var(--heading-color);
     }
 
     &.u-thin {
@@ -27,6 +27,10 @@
     &.u-small {
         font-size: 1rem;
     }
+}
+
+:where(h1, h2, h3, h5, h6) {
+    color: var(--heading-color);
 }
 
 h1 {
@@ -70,7 +74,7 @@ h5 {
 p {
     font-size: 1.1rem;
     line-height: 1.4;
-    color: var(--accent);
+    color: var(--paragraph-color);
 
     @include desktop {
         font-size: 1.2rem;

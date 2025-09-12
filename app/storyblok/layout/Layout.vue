@@ -7,6 +7,15 @@
             <div
                 :class="[
                     'layout__column', 
+                    'layout__column--center'
+                ]"
+            >
+                <atom-apperance-toggle />
+            </div>
+
+            <div
+                :class="[
+                    'layout__column', 
                     'layout__column--left'
                 ]"
             >

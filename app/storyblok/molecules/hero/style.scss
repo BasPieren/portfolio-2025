@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: var(--space-xl);
     padding: 3rem 2rem;
     border: 2px solid var(--background-light);
     border-radius: .8rem;
@@ -40,12 +40,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: .5rem;
+        gap: var(--space-s);
     }
 
     &__heading {
-        font-weight: 800;
-        color: var(--black);
+        color: var(--heading-color);
     }
 
     &__paragraph {
