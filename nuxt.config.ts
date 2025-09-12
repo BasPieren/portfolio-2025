@@ -1,7 +1,8 @@
 import { defineNuxtConfig } from 'nuxt/config';
-import mkcert from "vite-plugin-mkcert";
+import fs from 'fs'
 
 export default defineNuxtConfig({
+    compatibilityDate: '2025-09-12',
     devtools: { enabled: true },
     modules: [
         [
@@ -20,6 +21,9 @@ export default defineNuxtConfig({
         ],
     ],
     devServer: {
-        https: true,
+        https: {
+            key: '../certs/localhost-key.pem',
+            cert: '../certs/localhost.pem',
+        }
     },
 });
