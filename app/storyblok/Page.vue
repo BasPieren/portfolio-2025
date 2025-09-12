@@ -1,5 +1,5 @@
 <template>
-    <main class="page">
+    <main>
         <StoryblokComponent
             v-for="currentBlok in blok.body"
             :key="currentBlok._uid"
@@ -14,8 +14,4 @@ defineProps({ blok: Object });
 
 <style lang="scss">
 @use '../style/main';
-
-.page {
-    min-height: 100vh;
-}
 </style>
