@@ -20,12 +20,12 @@
                 {{ blok?.heading }}
             </h4>
 
-            <p class="timeline-item__paragraph p--light p--semibold">
+            <p class="timeline-item__paragraph u-light u-semibold">
                 {{ blok?.paragraph }}
             </p>
         </div>
 
-        <p class="timeline-item__date p--small">
+        <p class="timeline-item__date u-small">
             {{ blok?.date }}
         </p>
     </div>

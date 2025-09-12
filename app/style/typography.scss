@@ -1,42 +1,35 @@
 @use './mixins.scss' as *;
 
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6,
-p,
-.p {
-    &--primary {
+:where(h1, h2, h3, h4, h5, h6, p) {
+    text-box-trim: trim-both;
+    text-box-edge: cap alphabetic;
+
+    &.u-primary {
         color: var(--primary);
     }
 
-    &--light {
+    &.u-light {
         color: #ffffff;
     }
 
-    &--thin {
+    &.u-thin {
         font-weight: 400;
     }
 
-    &--semibold {
+    &.u-semibold {
         font-weight: 500;
     }
 
-    &--bold {
+    &.u-bold {
         font-weight: 700;
+    }
+
+    &.u-small {
+        font-size: 1rem;
     }
 }
 
-h1,
-.h1 {
+h1 {
     font-weight: 800;
     font-size: 2.8rem;
     line-height: 1;
@@ -47,22 +40,19 @@ h1,
     }
 }
 
-h2,
-.h2 {
+h2 {
     font-weight: 700;
     font-size: 4.3rem;
     line-height: 1;
     text-transform: uppercase;
 }
 
-h3,
-.h3 {
+h3 {
     font-size: 3.8em;
     line-height: 1;
 }
 
-h4,
-.h4 {
+h4 {
     font-size: 1.5em;
     line-height: 1;
     color: var(--primary);
@@ -72,14 +62,12 @@ h4,
     }
 }
 
-h5,
-.h5 {
+h5 {
     font-size: 1.8rem;
     line-height: 1;
 }
 
-p,
-.p {
+p {
     font-size: 1.1rem;
     line-height: 1.4;
     color: var(--accent);
@@ -87,9 +75,5 @@ p,
     @include desktop {
         font-size: 1.2rem;
         line-height: 1.3;
-    }
-
-    &--small {
-        font-size: 1rem;
     }
 }

@@ -3,7 +3,7 @@
 .column-section {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: var(--space-xl);
 
     @include desktop {
         @supports (animation-timeline: view()) {

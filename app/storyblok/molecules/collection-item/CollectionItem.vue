@@ -13,18 +13,29 @@
             v-if="blok?.value || blok?.description"
             class="collection-item__content"
         >
-            <h4 class="collection-item__value">
+            <h4 
+                v-if="blok?.value"
+                class="collection-item__value"
+            >
                 {{ blok?.value }}
             </h4>
 
-            <p class="collection-item__description p--small p--light p--semibold">
+            <p 
+                v-if="blok?.description"
+                :class="[
+                    'u-small',
+                    'u-light',
+                    'u-semibold',
+                    'collection-item__description', 
+                ]"
+            >
                 {{ blok?.description }}
             </p>
         </div>
     </div>
 </template>
 
-<script setup >
+<script setup lang="ts">
 defineProps({ blok: Object });
 </script>
 

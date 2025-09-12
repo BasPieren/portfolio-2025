@@ -4,7 +4,12 @@
         class="layout"
     >
         <div class="layout__inner">
-            <div class="layout__column layout__column--left">
+            <div
+                :class="[
+                    'layout__column', 
+                    'layout__column--left'
+                ]"
+            >
                 <StoryblokComponent
                     v-for="inblok in blok?.column_left"
                     :blok="inblok"
@@ -12,7 +17,12 @@
                 />
             </div>
 
-            <div class="layout__column layout__column--right">
+            <div
+                :class="[
+                    'layout__column', 
+                    'layout__column--right'
+                ]"
+            >
                 <StoryblokComponent
                     v-for="inblok in blok?.column_right"
                     :blok="inblok"
