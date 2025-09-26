@@ -1,7 +1,7 @@
 .text {
     display: flex;
     flex-direction: column;
-    gap: var(--space-l);
+    gap: var(--space-m);
 
     &:not(:first-child) {
         padding-top: 1rem;
