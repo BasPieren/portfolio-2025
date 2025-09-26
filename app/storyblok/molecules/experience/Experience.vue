@@ -5,12 +5,12 @@
     >
         <div class="experience__container">
             <div class="experience__headings">
-                <h3 
+                <h4 
                     v-if="blok?.heading"
                     class="experience__heading"
                 >
                     {{ blok?.heading }}
-                </h3>
+                </h4>
 
                 <h5
                     v-if="blok?.subheading"
