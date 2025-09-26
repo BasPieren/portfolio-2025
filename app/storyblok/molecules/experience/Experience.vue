@@ -1,32 +1,32 @@
 <template>
     <div
         v-editable="blok"
-        class="timeline-item"
+        class="experience"
     >
-        <div class="timeline-item__content">
+        <div class="experience__content">
             <h4 
                 v-if="blok?.heading"
-                class="timeline-item__heading"
+                class="experience__heading"
             >
                 {{ blok?.heading }}
             </h4>
 
             <p
-                v-if="blok?.paragraph"
+                v-if="blok?.subheading"
                 :class="[
-                    'timeline-item__paragraph',
+                    'experience__subheading',
                     'u-light',
                     'u-semibold',
                 ]"
             >
-                {{ blok?.paragraph }}
+                {{ blok?.subheading }}
             </p>
         </div>
 
         <p
             v-if="blok?.date"
             :class="[
-                'timeline-item__date',
+                'experience__date',
                 'u-small'
             ]"
         >
@@ -34,21 +34,18 @@
         </p>
 
         <p
-            v-if="blok?.description"
+            v-if="blok?.paragraph"
             :class="[
-                'timeline-item__date',
+                'timeline-item__paragraph',
                 'u-small'
             ]"
         >
-            {{ blok?.description }}
+            {{ blok?.paragraph }}
         </p>
     </div>
 </template>
 
 <script setup >
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { faBriefcase, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
-
 defineProps({ blok: Object });
 </script>
 
