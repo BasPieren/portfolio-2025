@@ -6,11 +6,28 @@
     --primary: #f7861b;
     --linkedin: #0072b1;
 
-    &.light {
+    :has(#apperance-toggle:checked) {
         --background: #f9f9f9;
         --background-light: #00000008;
         --heading-color: #333333;
         --paragraph-color: #333333;
         --primary: #596e96;
+    }
+
+    @media (prefers-color-scheme: light) {
+        --background: #f9f9f9;
+        --background-light: #00000008;
+        --heading-color: #333333;
+        --paragraph-color: #333333;
+        --primary: #596e96;
+
+        :has(#apperance-toggle:checked) {
+            --background: #071022;
+            --background-light: #FFFFFF08;
+            --heading-color: #FFFFFF;
+            --paragraph-color: #FFFFFF;
+            --primary: #f7861b;
+            --linkedin: #0072b1;
+        }
     }
 }
