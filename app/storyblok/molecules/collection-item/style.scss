@@ -25,9 +25,9 @@
 
     @media (hover: hover) {
         &:hover {
-            border-color: var(--primary);
+            border-color: var(--hover);
             scale: 1.05;
-            box-shadow: 0 0 10px 0 var(--primary);
+            box-shadow: 0 0 10px 0 var(--hover);
             cursor: default;
         }
     }

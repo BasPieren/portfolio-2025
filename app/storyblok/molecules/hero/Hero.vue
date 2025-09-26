@@ -12,11 +12,11 @@
         </div>
 
         <div class="hero__content">
-            <h4 class="hero__heading">
+            <h3 class="hero__heading">
                 {{ blok?.heading }}
-            </h4>
+            </h3>
 
-            <p class="hero__paragraph p--small">
+            <p class="hero__paragraph">
                 {{ blok?.paragraph }}
             </p>
         </div>
