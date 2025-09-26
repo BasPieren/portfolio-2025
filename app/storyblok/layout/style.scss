@@ -1,28 +1,22 @@
 @use '../../style/mixins.scss' as *;
 
 .layout {
-    width: 100%;
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: var(--space-l) 0;
-
-    @include desktop {
-        padding: var(--space-xxl) 0;
-    }
+    position: relative;
 
     &__inner {
         display: flex;
         flex-direction: column;
         gap: var(--space-l);
-        width: 100%;
+        max-width: 1140px;
         height: 100%;
-        padding-inline: 2rem;
+        margin: 0 auto;
+        padding: var(--space-l) 2rem;
 
         @include desktop {
             display: grid;
             grid-template-columns: 1fr 2fr;
             gap: var(--space-xxl);
-            padding-inline: 0;
+            padding: var(--space-xxxl) 0;
         }
     }
 

@@ -3,16 +3,9 @@
         v-editable="blok"
         class="layout"
     >
-        <div class="layout__inner">
-            <div
-                :class="[
-                    'layout__column', 
-                    'layout__column--center'
-                ]"
-            >
-                <atom-apperance-toggle />
-            </div>
+        <atom-apperance-toggle v-if="isDesktop" />
 
+        <div class="layout__inner">
             <div
                 :class="[
                     'layout__column', 
@@ -44,6 +37,8 @@
 
 <script setup >
 defineProps({ blok: Object });
+
+const { isDesktop } = useDevice();
 </script>
 
 <style scoped lang="scss">

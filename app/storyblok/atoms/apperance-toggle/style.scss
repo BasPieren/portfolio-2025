@@ -1,4 +1,7 @@
 .toggle-apperance {
+    position: absolute;
+    top: var(--space-xxxl);
+    right: var(--space-xxxl);
     margin: 0 auto;
 
     &__label {
