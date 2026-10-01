@@ -4,7 +4,7 @@
     right: var(--space-xxxl);
     margin: 0 auto;
 
-    &__label {
+    .toggle-apperance__label {
         display: block;
         position: relative;
         width: 50px;
@@ -32,7 +32,7 @@
         }
     }
 
-    &__input {
+    .toggle-apperance__input {
         display: none;
 
         &:checked {
