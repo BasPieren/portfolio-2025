@@ -1,11 +1,9 @@
-@use '../../../style/mixins.scss' as *;
-
 .column-section {
     display: flex;
     flex-direction: column;
     gap: var(--space-xl);
 
-    @include desktop {
+    @media (width >= 1024px ) {
         @supports (animation-timeline: view()) {
             animation: animate-in linear forwards, animate-out linear forwards;
             animation-timeline: view();
