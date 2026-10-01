@@ -45,6 +45,4 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 defineProps({ blok: Object });
 </script>
 
-<style scoped lang="scss">
-@use 'style';
-</style>
+<style scoped src="./hero.css"></style>

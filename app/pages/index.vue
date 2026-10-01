@@ -17,6 +17,4 @@ const { story } = await useAsyncStoryblok(
 );
 </script>
 
-<style scoped lang="scss">
-@use 'style';
-</style>
+<style scoped src="./style.css"></style>
