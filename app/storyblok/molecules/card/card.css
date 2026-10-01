@@ -1,0 +1,75 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    overflow: hidden;
+    border: 2px solid var(--background-light);
+    border-radius: 1rem;
+    background: var(--background-light);
+    transition: all .3s;
+
+    @media (hover: hover) {
+        &:hover {
+            border-color: var(--secondary);
+            cursor: default;
+        }
+    }
+}
+
+.card__header {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card__media {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    padding: 0 2rem 2rem;
+}
+
+.card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    padding-top: 1rem;
+}
+
+.card__tag {
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    background-color: var(--secondary);
+}
+
+.card__tag--scss {
+    background-color: var(--sass);
+}
+
+.card__tag--vue {
+    background-color: var(--vue);
+}
+
+.card__tag--vite {
+    background-color: var(--vite);
+}
+
+.card__tag--vuex {
+    background-color: var(--vuex);
+}
+
+.card__tag--cypress {
+    background-color: var(--cypress);
+}
+
+.card__tag--react {
+    background-color: var(--react);
+}
