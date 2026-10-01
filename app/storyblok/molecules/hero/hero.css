@@ -30,7 +30,7 @@
     overflow: hidden;
     border-radius: 50%;
 
-    @include desktop {
+    @media (width >= 1024px) {
         width: 250px;
     }
 }
