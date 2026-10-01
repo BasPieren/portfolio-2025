@@ -11,7 +11,3 @@
 <script setup>
 defineProps({ blok: Object });
 </script>
-
-<style lang="scss">
-@use '../style/main';
-</style>
