@@ -37,6 +37,4 @@
 defineProps({ blok: Object });
 </script>
 
-<style scoped lang="scss">
-@use 'style';
-</style>
+<style scoped src="./text.css"></style>
