@@ -1,0 +1,83 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-xl);
+    padding: 3rem 2rem;
+    border: 2px solid var(--background-light);
+    border-radius: .8rem;
+    background: var(--background-light);
+
+    @media (width >= 1024px) {
+        position: sticky;
+        top: 2rem;
+    }
+}
+
+.hero__media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero__media-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 50%;
+
+    @include desktop {
+        width: 250px;
+    }
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-s);
+}
+
+.hero__paragraph {
+    font-weight: 500;
+    text-align: center;
+}
+
+.hero__socials {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.hero__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    width: 100%;
+    height: 50px;
+    padding: .5rem 2rem;
+    border-radius: 25px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffffff;
+    background: var(--primary);
+    transition: scale .3s;
+
+    &:hover {
+        cursor: pointer;
+        scale: 1.05;
+    }
+
+    svg {
+        height: 1.5rem;
+    }
+}
+
+.hero__button--linkedin {
+    background: var(--linkedin);
+}
