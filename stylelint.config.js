@@ -1,7 +1,7 @@
 /** @type {import('stylelint').Config} */
 export default {
     extends: [
-        'stylelint-config-standard-scss',
+        'stylelint-config-standard',
     ],
     plugins: [
         'stylelint-declaration-strict-value',
@@ -19,7 +19,7 @@ export default {
                 'blockless-after-same-name-blockless',
                 'after-comment',
             ],
-            'ignoreAtRules': [ 'include', 'layer', 'if', 'else' ],
+            'ignoreAtRules': [ 'layer' ],
         } ],
         'color-named': 'never',
         'declaration-empty-line-before': [ 'always', {
@@ -29,10 +29,10 @@ export default {
                 'first-nested',
             ],
         } ],
-        'at-rule-no-unknown': null,
         'no-descending-specificity': null,
         'property-disallowed-list': [ 'float' ],
         'color-hex-length': null,
+        'import-notation': 'string',
         'selector-pseudo-class-no-unknown': [
             true,
             {
@@ -40,6 +40,13 @@ export default {
                     'global',
                     'deep',
                 ],
+            },
+        ],
+        // native CSS nesting does not concatenate, so `&__element` / `&--modifier` silently match nothing
+        'selector-nested-pattern': [
+            '^(?!&[_-])',
+            {
+                'message': 'Write BEM elements and modifiers as full class names, native CSS nesting does not concatenate "&"',
             },
         ],
         'selector-class-pattern': [
@@ -57,19 +64,9 @@ export default {
         '@stylistic/indentation': 4,
         '@stylistic/number-leading-zero': 'never',
         '@stylistic/number-no-trailing-zeros': null,
-        '@stylistic/block-closing-brace-newline-after': [ 'always', {
-            'ignoreAtRules': [
-                'if',
-                'else',
-            ],
-        } ],
+        '@stylistic/block-closing-brace-newline-after': 'always',
 
-        // stylelint-scss specific rules
-        // @see: https://www.npmjs.com/package/stylelint-config-standard-scss
-        'scss/at-rule-no-unknown': true,
-        'scss/at-else-empty-line-before': 'never',
-
-        // enforce SCSS variables / CSS custom properties as values, with some exceptions
+        // enforce CSS custom properties as values, with some exceptions
         // @see: https://www.npmjs.com/package/stylelint-declaration-strict-value
         'scale-unlimited/declaration-strict-value': [
             [ 'color', 'background-color', 'font-family', 'stroke', 'fill' ], { 'ignoreValues': [ 'transparent', 'inherit', '/#000/', '/#fff/', '/color-mix/', 'currentColor', 'initial' ] },
@@ -79,22 +76,7 @@ export default {
         // @see: https://www.npmjs.com/package/stylelint-order
         'order/order': [
             'custom-properties',
-            'dollar-variables',
-            {
-                'type': 'at-rule',
-                'name': 'extend',
-            },
-            {
-                'type': 'at-rule',
-                'name': 'include',
-                'hasBlock': false,
-            },
             'declarations',
-            {
-                'type': 'at-rule',
-                'name': 'include',
-                'hasBlock': true,
-            },
             'rules',
         ],
         'order/properties-order': [
