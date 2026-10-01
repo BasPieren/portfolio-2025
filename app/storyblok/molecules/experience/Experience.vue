@@ -5,7 +5,7 @@
     >
         <div class="experience__container">
             <div class="experience__headings">
-                <h4 
+                <h4
                     v-if="blok?.heading"
                     class="experience__heading"
                 >
@@ -14,11 +14,7 @@
 
                 <h5
                     v-if="blok?.subheading"
-                    :class="[
-                        'experience__subheading',
-                        'u-light',
-                        'u-semibold',
-                    ]"
+                    :class="['experience__subheading', 'u-light', 'u-semibold']"
                 >
                     {{ blok?.subheading }}
                 </h5>
@@ -26,10 +22,7 @@
 
             <p
                 v-if="blok?.date"
-                :class="[
-                    'experience__date',
-                    'u-small'
-                ]"
+                :class="['experience__date', 'u-small']"
             >
                 {{ blok?.date }}
             </p>
@@ -44,7 +37,7 @@
     </article>
 </template>
 
-<script setup >
+<script setup>
 defineProps({ blok: Object });
 </script>
 

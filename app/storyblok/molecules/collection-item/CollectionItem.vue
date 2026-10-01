@@ -13,21 +13,16 @@
             v-if="blok?.value || blok?.description"
             class="collection-item__content"
         >
-            <h4 
+            <h4
                 v-if="blok?.value"
                 class="collection-item__value"
             >
                 {{ blok?.value }}
             </h4>
 
-            <p 
+            <p
                 v-if="blok?.description"
-                :class="[
-                    'u-small',
-                    'u-light',
-                    'u-semibold',
-                    'collection-item__description', 
-                ]"
+                :class="['u-small', 'u-light', 'u-semibold', 'collection-item__description']"
             >
                 {{ blok?.description }}
             </p>

@@ -8,7 +8,7 @@
                 v-if="blok?.media"
                 class="hero__media"
                 :src="blok?.media"
-            >
+            />
         </div>
 
         <div class="hero__content">
@@ -28,9 +28,7 @@
                 :href="blok?.linkedin.url"
                 target="_blank"
             >
-                <span class="hero__button-label">
-                    LinkedIn
-                </span>
+                <span class="hero__button-label"> LinkedIn </span>
 
                 <font-awesome-icon :icon="faLinkedin" />
             </a>
@@ -38,7 +36,7 @@
     </section>
 </template>
 
-<script setup >
+<script setup>
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
