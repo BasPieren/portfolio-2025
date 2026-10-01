@@ -1,3 +1,7 @@
+:root {
+    --font-family: 'Montserrat', serif;
+}
+
 :where(h1, h2, h3, h4, h5, h6, p) {
     text-box-trim: trim-both;
     text-box-edge: cap alphabetic;
