@@ -1,5 +1,3 @@
-@use '../../../style/mixins.scss' as *;
-
 .collection-item {
     display: flex;
     align-items: center;
@@ -10,13 +8,13 @@
     background: var(--background-light);
     transition: all .3s;
 
-    @include desktop {
+    @media (width >= 1024px) {
         width: initial;
         max-width: calc(100% / 3 - 1rem);
     }
 
     &:has(.collection-item__media) {
-        @include mobile {
+        @media (width < 1024px) {
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -31,21 +29,21 @@
             cursor: default;
         }
     }
+}
 
-    &__media {
-        display: block;
-        height: 40px;
-        aspect-ratio: 1 / 1;
-        object-fit: contain;
-    }
+.collection-item__media {
+    display: block;
+    height: 40px;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+}
 
-    &__content {
-        display: flex;
-        flex-direction: column;
-        gap: var(--space-s);
-    }
+.collection-item__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-s);
+}
 
-    &__description {
-        text-wrap: anywhere;
-    }
+.collection-item__description {
+    text-wrap: anywhere;
 }
