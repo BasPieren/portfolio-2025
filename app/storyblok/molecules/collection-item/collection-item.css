@@ -45,5 +45,5 @@
 }
 
 .collection-item__description {
-    text-wrap: anywhere;
+    overflow-wrap: anywhere;
 }
