@@ -19,7 +19,7 @@
     }
 
     &.u-small {
-        font-size: .9rem;
+        font-size: 0.9rem;
         line-height: 1.5;
     }
 
@@ -29,7 +29,7 @@
 }
 
 :where(h1, h2, h5, h6) {
-    color: var(--heading-color)
+    color: var(--heading-color);
 }
 
 :where(h3, h4) {

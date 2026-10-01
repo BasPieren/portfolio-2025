@@ -1,12 +1,12 @@
 <template>
     <div class="toggle-apperance">
-        <input 
+        <input
             id="apperance-toggle"
             type="checkbox"
             name="apperance-toggle"
             class="toggle-apperance__input"
         />
-        <label 
+        <label
             for="apperance-toggle"
             class="toggle-apperance__label"
         />

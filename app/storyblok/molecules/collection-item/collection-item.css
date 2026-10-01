@@ -4,9 +4,9 @@
     gap: var(--space-s);
     padding: var(--space-m);
     border: 2px solid var(--background-light);
-    border-radius: .8rem;
+    border-radius: 0.8rem;
     background: var(--background-light);
-    transition: all .3s;
+    transition: all 0.3s;
 
     @media (width >= 1024px) {
         width: initial;

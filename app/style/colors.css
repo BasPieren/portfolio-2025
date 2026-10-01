@@ -1,11 +1,11 @@
 :root {
-    --background: #0D0D0D;
-    --background-light: #FFFFFF08;
+    --background: #0d0d0d;
+    --background-light: #ffffff08;
     --border-color: #222222;
-    --heading-color: #FFFFFF;
-    --paragraph-color: #E0E0E0;
-    --accent: #00FF85;
-    --hover: #FF0099;
+    --heading-color: #ffffff;
+    --paragraph-color: #e0e0e0;
+    --accent: #00ff85;
+    --hover: #ff0099;
     --linkedin: #0072b1;
 
     :has(#apperance-toggle:checked) {
@@ -14,8 +14,8 @@
         --border-color: #00000008;
         --heading-color: #222222;
         --paragraph-color: #444444;
-        --accent: #0074D9;
-        --hover: #FF0099;
+        --accent: #0074d9;
+        --hover: #ff0099;
         --linkedin: #0072b1;
     }
 
@@ -25,18 +25,18 @@
         --border-color: #00000008;
         --heading-color: #222222;
         --paragraph-color: #444444;
-        --accent: #0074D9;
-        --hover: #FF0099;
+        --accent: #0074d9;
+        --hover: #ff0099;
         --linkedin: #0072b1;
 
         :has(#apperance-toggle:checked) {
-            --background: #0D0D0D;
-            --background-light: #FFFFFF08;
+            --background: #0d0d0d;
+            --background-light: #ffffff08;
             --border-color: #222222;
-            --heading-color: #FFFFFF;
-            --paragraph-color: #E0E0E0;
-            --accent: #00FF85;
-            --hover: #FF0099;
+            --heading-color: #ffffff;
+            --paragraph-color: #e0e0e0;
+            --accent: #00ff85;
+            --hover: #ff0099;
             --linkedin: #0072b1;
         }
     }

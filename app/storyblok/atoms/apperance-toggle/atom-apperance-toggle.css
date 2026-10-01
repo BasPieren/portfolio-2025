@@ -25,7 +25,7 @@
         border-radius: 50%;
         background: #ffffff;
         box-shadow: inset 2px -2px 5px rgb(0 0 0 / 20%);
-        transition: all .3s ease;
+        transition: all 0.3s ease;
     }
 
     &:hover {
@@ -37,7 +37,7 @@
     display: none;
 
     &:checked {
-        +.toggle-apperance__label {
+        + .toggle-apperance__label {
             &::after {
                 left: calc(100% - 23px);
                 box-shadow: inset -2px -2px 5px rgb(0 0 0 / 20%);

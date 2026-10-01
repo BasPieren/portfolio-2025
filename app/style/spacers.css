@@ -1,6 +1,6 @@
 :root {
-    --space-xs: .5rem; /* 8px */
-    --space-s: .75rem; /* 12px */
+    --space-xs: 0.5rem; /* 8px */
+    --space-s: 0.75rem; /* 12px */
     --space-m: 1rem; /* 16px */
     --space-l: 1.5rem; /* 24px */
     --space-xl: 2rem; /* 32px */
