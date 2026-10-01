@@ -1,59 +1,52 @@
 /** @type {import('stylelint').Config} */
 export default {
-    extends: [
-        'stylelint-config-standard',
-    ],
+    extends: ['stylelint-config-standard'],
     plugins: [
         'stylelint-declaration-strict-value',
         'stylelint-order',
         '@stylistic/stylelint-plugin',
     ],
     rules: {
-    // stylelint built-in rules
-    // @see: https://stylelint.io/user-guide/rules
-        'at-rule-empty-line-before': [ 'always', {
-            'except': [
-                'first-nested',
-            ],
-            'ignore': [
-                'blockless-after-same-name-blockless',
-                'after-comment',
-            ],
-            'ignoreAtRules': [ 'layer' ],
-        } ],
+        // stylelint built-in rules
+        // @see: https://stylelint.io/user-guide/rules
+        'at-rule-empty-line-before': [
+            'always',
+            {
+                except: ['first-nested'],
+                ignore: ['blockless-after-same-name-blockless', 'after-comment'],
+                ignoreAtRules: ['layer'],
+            },
+        ],
         'color-named': 'never',
-        'declaration-empty-line-before': [ 'always', {
-            'except': [
-                'after-comment',
-                'after-declaration',
-                'first-nested',
-            ],
-        } ],
+        'declaration-empty-line-before': [
+            'always',
+            {
+                except: ['after-comment', 'after-declaration', 'first-nested'],
+            },
+        ],
         'no-descending-specificity': null,
-        'property-disallowed-list': [ 'float' ],
+        'property-disallowed-list': ['float'],
         'color-hex-length': null,
         'import-notation': 'string',
         'selector-pseudo-class-no-unknown': [
             true,
             {
-                'ignorePseudoClasses': [
-                    'global',
-                    'deep',
-                ],
+                ignorePseudoClasses: ['global', 'deep'],
             },
         ],
         // native CSS nesting does not concatenate, so `&__element` / `&--modifier` silently match nothing
         'selector-nested-pattern': [
             '^(?!&[_-])',
             {
-                'message': 'Write BEM elements and modifiers as full class names, native CSS nesting does not concatenate "&"',
+                message:
+                    'Write BEM elements and modifiers as full class names, native CSS nesting does not concatenate "&"',
             },
         ],
         'selector-class-pattern': [
             '^[a-z]([-]?[a-z0-9]+)*(__[a-z0-9]([-]?[a-z0-9]+)*)?(--[a-z0-9]([-]?[a-z0-9]+)*)?$',
             {
-                'resolveNestedSelectors': true,
-                'message': function expected(selectorValue) {
+                resolveNestedSelectors: true,
+                message: function expected(selectorValue) {
                     return `Expected class selector "${selectorValue}" to match BEM CSS pattern https://en.bem.info/methodology/css. Selector validation tool: https://regexr.com/3apms`;
                 },
             },
@@ -62,23 +55,31 @@ export default {
         // deprecated built-in stylelint rules, ported over to @stylistic/stylelint-plugin
         // @see: https://www.npmjs.com/package/@stylistic/stylelint-plugin
         '@stylistic/indentation': 4,
-        '@stylistic/number-leading-zero': 'never',
+        // oxfmt always prints a leading zero, so leave this to the formatter
+        '@stylistic/number-leading-zero': null,
         '@stylistic/number-no-trailing-zeros': null,
         '@stylistic/block-closing-brace-newline-after': 'always',
 
         // enforce CSS custom properties as values, with some exceptions
         // @see: https://www.npmjs.com/package/stylelint-declaration-strict-value
         'scale-unlimited/declaration-strict-value': [
-            [ 'color', 'background-color', 'font-family', 'stroke', 'fill' ], { 'ignoreValues': [ 'transparent', 'inherit', '/#000/', '/#fff/', '/color-mix/', 'currentColor', 'initial' ] },
+            ['color', 'background-color', 'font-family', 'stroke', 'fill'],
+            {
+                ignoreValues: [
+                    'transparent',
+                    'inherit',
+                    '/#000/',
+                    '/#fff/',
+                    '/color-mix/',
+                    'currentColor',
+                    'initial',
+                ],
+            },
         ],
 
         // enforce order of properties
         // @see: https://www.npmjs.com/package/stylelint-order
-        'order/order': [
-            'custom-properties',
-            'declarations',
-            'rules',
-        ],
+        'order/order': ['custom-properties', 'declarations', 'rules'],
         'order/properties-order': [
             'anchor-name',
 
