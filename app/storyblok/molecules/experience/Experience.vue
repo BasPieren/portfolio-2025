@@ -48,6 +48,4 @@
 defineProps({ blok: Object });
 </script>
 
-<style lang="scss">
-@use 'style';
-</style>
+<style scoped src="./experience.css"></style>
