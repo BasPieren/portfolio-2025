@@ -1,0 +1,31 @@
+.layout {
+    position: relative;
+}
+
+.layout__inner {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-l);
+    max-width: 1140px;
+    height: 100%;
+    margin: 0 auto;
+    padding: var(--space-l) 2rem;
+
+    @media (width >= 1024px) {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: var(--space-xxl);
+        padding: var(--space-xxxl) 0;
+    }
+}
+
+.layout__column {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xxl);
+    position: relative;
+}
+
+.layout__column--center {
+    grid-column: 1 / -1;
+}
