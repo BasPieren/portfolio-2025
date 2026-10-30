@@ -1,5 +1,5 @@
 <template>
-    <section class="home">
+    <section class="page">
         <StoryblokComponent
             v-if="story"
             :blok="story.content"

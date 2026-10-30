@@ -1,10 +1,15 @@
 <template>
+    <header class="header">
+        <div class="header__backgdrop"></div>
+        
+        <page-navigation />
+        <atom-apperance-toggle v-if="isDesktop" />
+    </header>
+
     <section
         v-editable="blok"
         class="layout"
     >
-        <atom-apperance-toggle v-if="isDesktop" />
-
         <div class="layout__inner">
             <div :class="['layout__column', 'layout__column--left']">
                 <StoryblokComponent

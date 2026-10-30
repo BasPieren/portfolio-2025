@@ -1,5 +1,15 @@
+.header {
+	position: sticky;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 4;
+}
+
 .layout {
 	position: relative;
+	padding-top: var(--space-xl);
 }
 
 .layout__inner {
@@ -9,13 +19,13 @@
 	max-width: 1140px;
 	height: 100%;
 	margin: 0 auto;
-	padding: var(--space-l) 2rem;
+	padding: 0 2rem var(--space-l);
 
 	@media (width >= 1024px) {
 		display: grid;
 		grid-template-columns: 1fr 2fr;
 		gap: var(--space-xxl);
-		padding: var(--space-xxxl) 0;
+		padding: 0 0 var(--space-xxxl);
 	}
 }
 

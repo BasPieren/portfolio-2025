@@ -1,7 +1,8 @@
 .toggle-apperance {
 	position: absolute;
-	top: var(--space-xxxl);
+	top: 50%;
 	right: var(--space-xxxl);
+	transform: translateY(-50%);
 	margin: 0 auto;
 }
 

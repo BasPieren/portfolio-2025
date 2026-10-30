@@ -2,7 +2,7 @@
 	--font-family: 'Montserrat', serif;
 }
 
-:where(h1, h2, h3, h4, h5, h6, p) {
+:where(h1, h2, h3, h4, h5, h6, p, a, li) {
 	text-box-trim: trim-both;
 	text-box-edge: cap alphabetic;
 
@@ -82,7 +82,9 @@ h6 {
 	line-height: 1.35;
 }
 
-p {
+p,
+a,
+li {
 	font-size: 1rem;
 	line-height: 1.6;
 	color: var(--paragraph-color);
