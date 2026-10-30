@@ -1,15 +1,16 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    font-family: var(--font-family);
-    color: var(--text-color);
-    background: var(--background);
+	font-family: var(--font-family);
+	color: var(--text-color);
+	background: var(--background);
+	scroll-behavior: smooth;
 }
 
 main {
-    min-height: 100vh;
+	min-height: 100vh;
 }

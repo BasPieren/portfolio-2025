@@ -1,83 +1,83 @@
 .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--space-xl);
-    padding: 3rem 2rem;
-    border: 2px solid var(--background-light);
-    border-radius: 0.8rem;
-    background: var(--background-light);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: var(--space-xl);
+	padding: 3rem 2rem;
+	border: 2px solid var(--background-light);
+	border-radius: 0.8rem;
+	background: var(--background-light);
 
-    @media (width >= 1024px) {
-        position: sticky;
-        top: 2rem;
-    }
+	@media (width >= 1024px) {
+		position: sticky;
+		top: 6.75rem;
+	}
 }
 
 .hero__media {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .hero__media-wrapper {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    overflow: hidden;
-    border-radius: 50%;
+	position: relative;
+	width: 100%;
+	aspect-ratio: 1 / 1;
+	overflow: hidden;
+	border-radius: 50%;
 
-    @media (width >= 1024px) {
-        width: 250px;
-    }
+	@media (width >= 1024px) {
+		width: 250px;
+	}
 }
 
 .hero__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--space-s);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: var(--space-s);
 }
 
 .hero__paragraph {
-    font-weight: 500;
-    text-align: center;
+	font-weight: 500;
+	text-align: center;
 }
 
 .hero__socials {
-    display: flex;
-    gap: 1rem;
-    width: 100%;
+	display: flex;
+	gap: 1rem;
+	width: 100%;
 }
 
 .hero__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    width: 100%;
-    height: 50px;
-    padding: 0.5rem 2rem;
-    border-radius: 25px;
-    font-weight: 700;
-    text-decoration: none;
-    color: #ffffff;
-    background: var(--primary);
-    transition: scale 0.3s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	width: 100%;
+	height: 50px;
+	padding: 0.5rem 2rem;
+	border-radius: 25px;
+	font-weight: 700;
+	text-decoration: none;
+	color: #ffffff;
+	background: var(--primary);
+	transition: scale 0.3s;
 
-    &:hover {
-        cursor: pointer;
-        scale: 1.05;
-    }
+	&:hover {
+		cursor: pointer;
+		scale: 1.05;
+	}
 
-    svg {
-        height: 1.5rem;
-    }
+	svg {
+		height: 1.5rem;
+	}
 }
 
 .hero__button--linkedin {
-    background: var(--linkedin);
+	background: var(--linkedin);
 }
