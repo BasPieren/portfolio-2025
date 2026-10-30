@@ -1,49 +1,40 @@
 .collection-item {
-    display: flex;
-    align-items: center;
-    gap: var(--space-s);
-    padding: var(--space-m);
-    border: 2px solid var(--background-light);
-    border-radius: 0.8rem;
-    background: var(--background-light);
-    transition: all 0.3s;
+	display: flex;
+	align-items: center;
+	gap: var(--space-s);
+	padding: var(--space-m);
+	border: 2px solid var(--background-light);
+	border-radius: 0.8rem;
+	background: var(--background-light);
+	transition: all 0.3s;
 
-    @media (width >= 1024px) {
-        width: initial;
-        max-width: calc(100% / 3 - 1rem);
-    }
+	@media (width >= 1024px) {
+		width: initial;
+		max-width: calc(100% / 3 - 1rem);
+	}
 
-    &:has(.collection-item__media) {
-        @media (width < 1024px) {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-
-    @media (hover: hover) {
-        &:hover {
-            border-color: var(--hover);
-            scale: 1.05;
-            box-shadow: 0 0 10px 0 var(--hover);
-            cursor: default;
-        }
-    }
+	&:has(.collection-item__media) {
+		@media (width < 1024px) {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+	}
 }
 
 .collection-item__media {
-    display: block;
-    height: 40px;
-    aspect-ratio: 1 / 1;
-    object-fit: contain;
+	display: block;
+	height: 40px;
+	aspect-ratio: 1 / 1;
+	object-fit: contain;
 }
 
 .collection-item__content {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-s);
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-s);
 }
 
 .collection-item__description {
-    overflow-wrap: anywhere;
+	overflow-wrap: anywhere;
 }
