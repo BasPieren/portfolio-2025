@@ -31,8 +31,12 @@
 .layout__column {
 	display: flex;
 	flex-direction: column;
-	gap: var(--space-xxxl);
+	gap: var(--space-xxl);
 	position: relative;
+
+	@media (width >= 1024px) {
+		gap: var(--space-xxxl);
+	}
 }
 
 .layout__column--center {
