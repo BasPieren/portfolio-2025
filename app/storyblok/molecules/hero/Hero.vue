@@ -1,7 +1,13 @@
 <template>
     <section
         v-editable="blok"
-        class="hero"
+        :class="[
+            'container',
+            'container--column',
+            'container--large-gap',
+            'container--large-padding',
+            'hero'
+        ]"
     >
         <div class="hero__media-wrapper">
             <img
@@ -24,7 +30,7 @@
         <div class="hero__socials">
             <a
                 v-if="blok?.linkedin"
-                class="hero__button hero__button--linkedin"
+                class="hero__button"
                 :href="blok?.linkedin.url"
                 target="_blank"
             >

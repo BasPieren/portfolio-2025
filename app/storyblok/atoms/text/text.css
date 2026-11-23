@@ -1,11 +1,11 @@
 .text {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-m);
-    padding-bottom: var(--space-l);
-    border-bottom: 1px solid var(--border-color);
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-l);
+	padding-bottom: var(--space-l);
+	border-bottom: 2px solid var(--highlight);
 
-    &:not(:first-child) {
-        padding-top: 1rem;
-    }
+	&:not(:first-child) {
+		padding-top: 1rem;
+	}
 }

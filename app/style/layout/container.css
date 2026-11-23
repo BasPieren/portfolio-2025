@@ -1,0 +1,20 @@
+.container {
+	display: flex;
+	align-items: center;
+	gap: var(--space-m);
+	padding: var(--space-m);
+	border-radius: 0.4rem;
+	background-color: var(--surface);
+
+	&.container--column {
+		flex-direction: column;
+	}
+
+	&.container--large-gap {
+		gap: var(--space-xl);
+	}
+
+	&.container--large-padding {
+		padding: var(--space-xl) var(--space-l);
+	}
+}

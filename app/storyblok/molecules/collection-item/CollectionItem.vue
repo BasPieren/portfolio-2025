@@ -1,7 +1,10 @@
 <template>
     <div
         v-editable="blok"
-        class="collection-item"
+        :class="[
+            'container',
+            'collection-item'
+        ]"
     >
         <img
             v-if="blok?.media"

@@ -1,17 +1,5 @@
 .collection-item {
-	display: flex;
-	align-items: center;
-	gap: var(--space-s);
-	padding: var(--space-m);
-	border: 2px solid var(--background-light);
-	border-radius: 0.8rem;
-	background: var(--background-light);
-	transition: all 0.3s;
-
-	@media (width >= 1024px) {
-		width: initial;
-		max-width: calc(100% / 3 - 1rem);
-	}
+	width: fit-content;
 
 	&:has(.collection-item__media) {
 		@media (width < 1024px) {

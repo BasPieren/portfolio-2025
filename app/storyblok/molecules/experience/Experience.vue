@@ -5,33 +5,21 @@
     >
         <div class="experience__container">
             <div class="experience__headings">
-                <h4
-                    v-if="blok?.heading"
-                    class="experience__heading"
-                >
+                <h3 v-if="blok?.heading">
                     {{ blok?.heading }}
-                </h4>
+                </h3>
 
-                <h5
-                    v-if="blok?.subheading"
-                    :class="['experience__subheading', 'u-light', 'u-semibold']"
-                >
+                <h4 v-if="blok?.subheading">
                     {{ blok?.subheading }}
-                </h5>
+                </h4>
             </div>
 
-            <p
-                v-if="blok?.date"
-                :class="['experience__date', 'u-small']"
-            >
+            <h5 v-if="blok?.date">
                 {{ blok?.date }}
-            </p>
+            </h5>
         </div>
 
-        <p
-            v-if="blok?.paragraph"
-            class="timeline-item__paragraph"
-        >
+        <p v-if="blok?.paragraph">
             {{ blok?.paragraph }}
         </p>
     </article>

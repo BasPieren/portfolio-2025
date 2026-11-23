@@ -9,30 +9,29 @@
 
 .layout {
 	position: relative;
-	padding-top: var(--space-xl);
 }
 
 .layout__inner {
 	display: flex;
 	flex-direction: column;
 	gap: var(--space-l);
-	max-width: 1140px;
+	max-width: 1440px;
 	height: 100%;
 	margin: 0 auto;
-	padding: 0 2rem var(--space-l);
+	padding: var(--space-l);
 
 	@media (width >= 1024px) {
 		display: grid;
 		grid-template-columns: 1fr 2fr;
 		gap: var(--space-xxl);
-		padding: 0 0 var(--space-xxxl);
+		padding: var(--space-xxxl);
 	}
 }
 
 .layout__column {
 	display: flex;
 	flex-direction: column;
-	gap: var(--space-xxl);
+	gap: var(--space-xxxl);
 	position: relative;
 }
 
