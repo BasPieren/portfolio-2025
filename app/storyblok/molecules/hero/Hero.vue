@@ -18,11 +18,11 @@
         </div>
 
         <div class="hero__content">
-            <h3 class="hero__heading">
+            <h3>
                 {{ blok?.heading }}
             </h3>
 
-            <p class="hero__paragraph">
+            <p>
                 {{ blok?.paragraph }}
             </p>
         </div>

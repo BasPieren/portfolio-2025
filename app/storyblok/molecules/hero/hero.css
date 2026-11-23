@@ -16,7 +16,7 @@
 
 .hero__media-wrapper {
 	position: relative;
-	width: 100%;
+	width: 80%;
 	aspect-ratio: 1 / 1;
 	overflow: hidden;
 	border-radius: 50%;
@@ -31,11 +31,6 @@
 	flex-direction: column;
 	align-items: center;
 	gap: var(--space-s);
-}
-
-.hero__paragraph {
-	font-weight: 500;
-	text-align: center;
 }
 
 .hero__socials {
