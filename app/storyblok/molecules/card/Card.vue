@@ -30,7 +30,7 @@
                 <span
                     v-for="tag in blok?.tags"
                     :key="tag"
-                    :class="['card__tag', `card__tag--${tag.toLowerCase()}`, 'p--small']"
+                    class="card__tag"
                 >
                     {{ tag }}
                 </span>
