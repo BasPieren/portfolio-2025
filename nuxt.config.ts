@@ -1,5 +1,4 @@
 import { defineNuxtConfig } from 'nuxt/config';
-import fs from 'fs';
 
 export default defineNuxtConfig({
     compatibilityDate: '2025-09-12',
