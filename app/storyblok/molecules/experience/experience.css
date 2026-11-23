@@ -9,7 +9,7 @@
 
 	&:not(:last-child) {
 		padding-bottom: var(--space-m);
-		border-bottom: 2px solid var(--background-light);
+		border-bottom: 2px solid var(--surface);
 	}
 }
 
