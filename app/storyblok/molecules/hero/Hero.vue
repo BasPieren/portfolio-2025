@@ -3,8 +3,6 @@
         v-editable="blok"
         :class="[
             'container',
-            'container--column',
-            'container--large-gap',
             'hero'
         ]"
     >

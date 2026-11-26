@@ -9,7 +9,7 @@
 	max-width: 1440px;
 	height: 100%;
 	margin: 0 auto;
-	padding: var(--space-l);
+	padding: var(--space-s);
 
 	@media (width >= 1024px) {
 		display: grid;
