@@ -12,7 +12,6 @@ export default defineNuxtConfig({
                 devtools: { enabled: true },
             },
         ],
-        '@nuxtjs/device',
     ],
     devServer: {
         https: {

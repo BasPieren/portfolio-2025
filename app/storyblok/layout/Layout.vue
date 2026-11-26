@@ -1,10 +1,4 @@
 <template>
-    <!-- <header class="header">
-        <div class="header__backgdrop"></div>
-
-        <atom-apperance-toggle v-if="isDesktop" />
-    </header> -->
-
     <section
         v-editable="blok"
         class="layout"
@@ -31,8 +25,6 @@
 
 <script setup>
 defineProps({ blok: Object });
-
-const { isDesktop } = useDevice();
 </script>
 
 <style scoped src="./layout.css"></style>

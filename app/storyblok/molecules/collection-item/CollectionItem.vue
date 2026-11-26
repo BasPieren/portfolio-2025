@@ -25,7 +25,7 @@
 
             <p
                 v-if="blok?.description"
-                :class="['u-small', 'u-light', 'u-semibold', 'collection-item__description']"
+                class="collection-item__description"
             >
                 {{ blok?.description }}
             </p>

@@ -1,12 +1,3 @@
-.header {
-	position: sticky;
-	top: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	z-index: 4;
-}
-
 .layout {
 	position: relative;
 }
@@ -37,8 +28,4 @@
 	@media (width >= 1024px) {
 		gap: var(--space-xxxl);
 	}
-}
-
-.layout__column--center {
-	grid-column: 1 / -1;
 }

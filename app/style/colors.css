@@ -5,10 +5,8 @@
 	--text-muted: #5a4636;
 	--accent: #a5472a;
 	--accent-hover: #8a3b22;
-	--accent-contrast: #faf4ea;
 	--accent-2: #5b6b34;
 	--highlight: #d9a441;
-	--dark: #2f3e2a;
 
 	@media (prefers-color-scheme: dark) {
 		--bg: #1c1713;
@@ -17,7 +15,6 @@
 		--text-muted: #cbb8a0;
 		--accent: #e2845f;
 		--accent-hover: #f09b79;
-		--accent-contrast: #1c1713;
 		--accent-2: #a9bb78;
 		--highlight: #e3b04b;
 	}
