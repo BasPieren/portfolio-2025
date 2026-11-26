@@ -21,4 +21,7 @@ export default defineNuxtConfig({
         },
     },
     css: ['allo-font', '~/style/main.css'],
+    build: {
+        transpile: ['@fortawesome/vue-fontawesome'],
+    },
 });
