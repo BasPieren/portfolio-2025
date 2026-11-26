@@ -5,7 +5,6 @@
             'container',
             'container--column',
             'container--large-gap',
-            'container--large-padding',
             'hero'
         ]"
     >
