@@ -1,11 +1,10 @@
 .collection {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: var(--space-l);
 
-    @media (width >= 1024px) {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
+	@media (width >= 1024px) {
+		display: flex;
+		flex-wrap: wrap;
+	}
 }
