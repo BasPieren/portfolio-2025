@@ -1,8 +1,7 @@
 <template>
     <!-- <header class="header">
         <div class="header__backgdrop"></div>
-        
-        <page-navigation />
+
         <atom-apperance-toggle v-if="isDesktop" />
     </header> -->
 
